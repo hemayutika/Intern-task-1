@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bucket List</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #444;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            font-size: 18px;
+            padding: 12px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: 0.3s;
+            color: #222;
+        }
+        li:hover {
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+        .icon {
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Bucket List</h1>
+        <ul>
+            <li>Start an Instagram Quotes Page <span class="icon">✨</span></li>
+            <li>Travel to Japan <span class="icon">✔</span></li>
+            <li>Learn a new language <span class="icon">✔</span></li>
+            <li class="completed">Go skydiving <span class="icon">✔</span></li>
+            <li>Write a blog <span class="icon">⏳</span></li>
+        </ul>
+    </div>
+</body>
+</html>
